@@ -4938,6 +4938,7 @@
 		EB0D9C072667A08900F2B5B8 /* 1707.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB0D88CC2667A08700F2B5B8 /* 1707.wav */; };
 		EB0D9C082667A08900F2B5B8 /* 293.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB0D88CD2667A08700F2B5B8 /* 293.wav */; };
 		EB0D9C092667A08900F2B5B8 /* 3110.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB0D88CE2667A08700F2B5B8 /* 3110.wav */; };
+		EB0D9C0B2667A2A500F2B5B8 /* SoundPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D9C0A2667A2A500F2B5B8 /* SoundPlaying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -9917,6 +9918,7 @@
 		EB0D88CC2667A08700F2B5B8 /* 1707.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1707.wav; sourceTree = "<group>"; };
 		EB0D88CD2667A08700F2B5B8 /* 293.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 293.wav; sourceTree = "<group>"; };
 		EB0D88CE2667A08700F2B5B8 /* 3110.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3110.wav; sourceTree = "<group>"; };
+		EB0D9C0A2667A2A500F2B5B8 /* SoundPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlaying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -9968,6 +9970,7 @@
 				EB0D758326679FFE00F2B5B8 /* Assets.xcassets */,
 				EB0D758526679FFE00F2B5B8 /* Info.plist */,
 				EB0D75932667A05100F2B5B8 /* Sound Effects */,
+				EB0D9C0A2667A2A500F2B5B8 /* SoundPlaying.swift */,
 			);
 			path = "OSRS Soundboard WatchKit Extension";
 			sourceTree = "<group>";
@@ -19953,6 +19956,7 @@
 			files = (
 				EB0D758026679FFE00F2B5B8 /* ExtensionDelegate.swift in Sources */,
 				EB0D757E26679FFE00F2B5B8 /* InterfaceController.swift in Sources */,
+				EB0D9C0B2667A2A500F2B5B8 /* SoundPlaying.swift in Sources */,
 				EB0D758226679FFE00F2B5B8 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

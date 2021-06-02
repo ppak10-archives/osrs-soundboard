@@ -6,11 +6,16 @@
 //
 
 import WatchKit
-import Foundation
+import AVFoundation
 
 
-class InterfaceController: WKInterfaceController {
-
+class InterfaceController: WKInterfaceController, SoundPlaying {
+    var audioPlayer: AVAudioPlayer?
+    
+    let sounds = Bundle.main.urls(forResourcesWithExtension: "wav", subdirectory: nil)?.map({
+        $0.deletingPathExtension().lastPathComponent
+    }) ?? []
+    
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
     }
@@ -23,4 +28,11 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
 
+    @IBAction func playRandomSound() {
+        guard let filename = sounds.randomElement()
+        else {
+            fatalError("Invalid filename")
+        }
+        playSound(named: filename)
+    }
 }
